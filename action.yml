@@ -1,0 +1,24 @@
+name: 'Xcodebuild Coverage Report'
+description: 'Report xcodebuild test coverage summary and lcov file'
+author: 'Maxime Epain'
+branding:
+    icon: 'check-circle'  
+    color: 'blue'
+inputs:
+    derived-data-path:
+        description: 'Specify the directory where build products and other derived data can be found.'
+        required: true
+    target:
+        description: 'The target name to report.'
+        required: true
+    output-file:
+        description: 'The output file path.'
+        required: false
+        default: './coverage/lcov.info'
+    file-format:
+        description: 'The output file format.'
+        required: false
+        default: 'lcov'
+runs:
+    using: 'node12'
+    main: 'index.js'

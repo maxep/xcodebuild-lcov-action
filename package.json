@@ -1,0 +1,26 @@
+{
+  "name": "xcodebuild-lcov-action",
+  "version": "0.1.0",
+  "description": "Xcodebuild Code Coverage Report.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxep/xcodebuild-lcov-action.git"
+  },
+  "keywords": [
+    "xcodebuild",
+    "lcov",
+    "coverage"
+  ],
+  "author": "Maxime Epain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxep/xcodebuild-lcov-action/issues"
+  },
+  "homepage": "https://github.com/maxep/xcodebuild-lcov-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^4.0.0"
+  }
+}
