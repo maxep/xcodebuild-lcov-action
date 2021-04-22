@@ -4,7 +4,7 @@ Xcodebuild Code Coverage Report.
 
 ## Summary Report
 
-The action will report a test coverage summary in you job logs:
+The action will report a test coverage summary in your job logs:
 
 ```
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -22,21 +22,21 @@ The action will also create a coverage file that can be digest by other actions,
 
 ## Inputs
 
-#### `derived-data-path`
+#### `derived-data-path` (required)
 
-**Required** Specify the directory where build products and other derived data can be found.
+Specify the directory where build products and other derived data can be found.
 
-#### `target`
+#### `target` (required)
 
-**Required** The target name to report.
+The target name to report.
 
-#### `output-file`
+#### `output-file` (optional)
 
-**Optional** Specify a file path to write coverage report into. By default, the coverage will be reported to `./coverage/lcov.info`. If the directory does not exist, it is created.
+Specify a file path of the coverage report.  By default, the coverage will be reported to `./coverage/lcov.info`. If the directory does not exist, it will be created.
 
-#### `file-format`
+#### `file-format` (optional)
 
-**Optional** Use the specified output format. The supported formats are: “text” (JSON), “lcov” (Default).
+Use the specified output format. The supported formats are: “text” (JSON), “lcov” (Default).
 
 ## Example usage
 ```yml
